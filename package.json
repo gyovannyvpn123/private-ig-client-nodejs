@@ -4,6 +4,7 @@
   "description": "A reverse engineered Instagram client library for Node.js, inspired by Baileys. Supports login, messaging, likes, comments, followers and more.",
   "main": "lib/client.js",
   "types": "lib/client.d.ts",
+  "type": "module",
   "scripts": {
     "test": "node test/test.js",
     "lint": "eslint . --fix",
