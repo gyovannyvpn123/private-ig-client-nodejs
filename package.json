@@ -1,5 +1,5 @@
 {
-  "name": "privat-ig-client-nodejs",
+  "name": "private-ig-client-nodejs",
   "version": "1.0.0",
   "description": "A reverse engineered Instagram client library for Node.js, inspired by Baileys. Supports login, messaging, likes, comments, followers and more.",
   "main": "lib/client.js",
