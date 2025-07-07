@@ -1,24 +1,47 @@
 {
   "name": "privat-ig-client-nodejs",
   "version": "1.0.0",
-  "description": "An unofficial Instagram client library emulating the official mobile app with login, messaging, follow, and more.",
-  "main": "index.js",
-  "type": "module",
+  "description": "A reverse engineered Instagram client library for Node.js, inspired by Baileys. Supports login, messaging, likes, comments, followers and more.",
+  "main": "lib/client.js",
+  "types": "lib/client.d.ts",
   "scripts": {
-    "test": "echo \"No tests defined yet\" && exit 0"
+    "test": "node test/test.js",
+    "lint": "eslint . --fix",
+    "build": "tsc",
+    "start": "node example/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/privat-ig-client-nodejs.git"
   },
   "keywords": [
     "instagram",
-    "client",
-    "api",
+    "instagram-api",
+    "reverse-engineered",
     "nodejs",
-    "reverse-engineering",
-    "unofficial"
+    "client",
+    "messaging",
+    "social-media"
   ],
   "author": "Gyovanny",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/privat-ig-client-nodejs/issues"
+  },
+  "homepage": "https://github.com/username/privat-ig-client-nodejs#readme",
   "dependencies": {
-    "axios": "^1.6.0",
-    "uuid": "^9.0.0"
+    "axios": "^1.4.0",
+    "uuid": "^9.0.0",
+    "crypto-js": "^4.1.1",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "eslint": "^8.47.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.1.6"
   }
 }
